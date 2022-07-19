@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mypageprofile_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="30dp"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/spocontain_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="스포가 포함되어 있는 편지입니다.\n 그래도 읽어볼까요?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/spocontain_yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spocontain_tv"/>
+
+    <Button
+        android:id="@+id/spocontain_no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아니오"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spocontain_tv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

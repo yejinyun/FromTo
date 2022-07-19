@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/editprofile_close_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/button_arrow_goback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/editprofile_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 정보 수정"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/editprofile_close_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editprofile_close_iv" />
+
+
+        <View
+            android:id="@+id/editprofile_nickname_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_title_tv"/>
+
+        <TextView
+            android:id="@+id/editprofile_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_nickname_underscore_view"/>
+
+        <TextView
+            android:id="@+id/editprofile_email_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인을 해주세요 :)"
+            android:textColor="@color/white_80"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_email_tv"/>
+
+        <View
+            android:id="@+id/editprofile_written_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_email_mail"/>
+
+        <TextView
+            android:id="@+id/editprofile_liked_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="필명 변경"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_written_underscore_view"/>
+
+        <View
+            android:id="@+id/editprofile_liked_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="16sp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_liked_tv"/>
+
+        <TextView
+            android:id="@+id/editprofile_changeps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 변경"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_liked_underscore_view"/>
+
+        <View
+            android:id="@+id/editprofile_service_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_changeps_tv"/>
+
+        <TextView
+            android:id="@+id/editprofile_versioninfo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림 설정"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_service_underscore_view"/>
+
+        <TextView
+            android:id="@+id/editprofile_toggle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginEnd="16sp"
+            app:layout_constraintEnd_toStartOf="@id/editprofile_toggle_iv"
+            app:layout_constraintTop_toTopOf="@id/editprofile_service_underscore_view"
+            app:layout_constraintBottom_toBottomOf="@id/under01"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/editprofile_toggle_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_toggle_off_24"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editprofile_service_underscore_view"
+            app:layout_constraintBottom_toBottomOf="@id/under01"/>
+
+        <View
+            android:id="@+id/under01"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_versioninfo_tv"/>
+
+        <TextView
+            android:id="@+id/editprofile_logout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/under01"/>
+
+        <View
+            android:id="@+id/under02"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editprofile_logout_tv"/>
+
+
+        <TextView
+            android:id="@+id/editprofile_signout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탈퇴하기"
+            android:textColor="@color/point_red"
+            android:textSize="16sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="@id/editprofile_email_tv"
+            app:layout_constraintTop_toBottomOf="@id/under02"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!-- Notice -->
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtText"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="스포가 포함되어 있는 편지입니다.\n 그래도 읽어볼까요?"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/YesButton"
+            android:backgroundTint="@color/white"
+            android:onClick="mOnClose"
+            android:text="예"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/NoButton"
+            android:backgroundTint="@color/white"
+            android:onClick="mOffClose"
+            android:text="아니오"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+    <!--버튼 -->
+</LinearLayout>

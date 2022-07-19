@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Fromto/app/src/main/res/drawable/background_bnv_transparent.xml" value="0.275" />
+        <entry key="..\:/Fromto/app/src/main/res/drawable/dialog_mypageprofile.xml" value="0.27076923076923076" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_chatread.xml" value="0.264" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_popup.xml" value="0.4" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_readmail.xml" value="0.1890625" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_signup.xml" value="0.1859375" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_splash.xml" value="0.16979166666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_writecommunity.xml" value="0.10677083333333333" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activity_writepersonal.xml" value="0.4" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/activiy_findps.xml" value="0.19114583333333332" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/dialog_mypageprofile.xml" value="0.25885416666666666" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/dialog_signup_00_1.xml" value="0.12960082944530846" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/dialog_signup_00_2.xml" value="0.25885416666666666" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/dialog_spocontain.xml" value="0.25885416666666666" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_changenickname.xml" value="0.1265625" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_chatread.xml" value="0.176" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_commudetail.xml" value="0.16197916666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_editprofile.xml" value="0.16" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_home.xml" value="0.19114583333333332" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_likedmovie.xml" value="0.19114583333333332" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_mailbox.xml" value="0.15886618325642715" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_mailbox_more.xml" value="0.16197916666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_mypage.xml" value="0.1953125" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_reply.xml" value="0.17916666666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_replypersonal.xml" value="0.2" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_signup_00.xml" value="0.264" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_signup_00_1.xml" value="0.25885416666666666" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_signup_01.xml" value="0.1859375" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_signup_02.xml" value="0.19114583333333332" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/fragment_writtenmovie.xml" value="0.4" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/item_chattitle.xml" value="0.16197916666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/item_mailtitle.xml" value="0.1734375" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/item_poster.xml" value="0.1859375" />
+        <entry key="..\:/Fromto/app/src/main/res/layout/spinner_item.xml" value="0.17916666666666667" />
+        <entry key="..\:/Fromto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1890625" />
+        <entry key="..\:/Fromto/app/src/main/res/xml/file_provider.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.12763157894736843" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_bnv_transparent.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_login_btn.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_mailbox.xml" value="0.128" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_spo_contain.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_transparent.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_white_border.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/background_white_btn.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/bnv_background_transparent.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/dialog_mypageprofile.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/edittext_login.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/edittext_rounded_rectangle.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/gradient_black.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/gradient_black_180.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/gradient_black_360.xml" value="0.21145833333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/gradient_black_90.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/ic_baseline_view_module_24.xml" value="0.19375" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/login_button_color_drawable.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/login_buttonshape.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/login_buttonshape2.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/main_btm_color_selector.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/menu_selector_color.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/round.xml" value="0.246875" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/shadow.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/text_cursor.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/white_border.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/drawable/white_btn.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/font/custom_font.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/font/custom_font_family.xml" value="0.16" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_community.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_mailopen.xml" value="0.176" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_mailopen_1.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_mailopen_2.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_mypage.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_popup.xml" value="0.4" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_read.xml" value="0.12" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_readmail.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_selectmovie.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_signup.xml" value="0.176" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_splash.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_writecommunity.xml" value="0.4" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activity_writepersonal.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/activiy_findps.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/community_activity.xml" value="0.10860655737704918" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/dialog_mypageprofile.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/dialog_spocontain.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_commudetail.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_community.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_editprofile.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_findps.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_letterbox.xml" value="0.176" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_letteropen.xml" value="0.176" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_likedmovie.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_mailbox.xml" value="0.14304993252361672" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_mailbox_more.xml" value="0.16" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_mypage.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_read.xml" value="0.19375" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_signup.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_signup_00.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_signup_01.xml" value="0.176" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_signup_02.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/fragment_writtenmovie.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_commudetail.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_community_rv.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_communityposter.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_commuposter.xml" value="0.4" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_detail.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_mail_more.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_mailtitle.xml" value="0.4" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/item_poster.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/layout_toast.xml" value="0.4" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/letterbox.xml" value="0.16" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/lettertitle.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/loading.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/notice.xml" value="0.2" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/noticetitle.xml" value="0.264" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/spinner_item.xml" value="0.153125" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/layout/toast_sample.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/mipmap-anydpi-v26/ic_fromto.xml" value="0.2140625" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/mipmap-anydpi-v26/ic_fromto_round.xml" value="0.2140625" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/yuny0/Desktop/Fromto/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

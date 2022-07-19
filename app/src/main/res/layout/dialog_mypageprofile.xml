@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mypageprofile_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_mypageprofile"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dialog_profile_cv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp">
+        <ImageView
+                android:id="@+id/dialog_profile_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fromto_icon_me_mypage" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/mypageprofile_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:text="앨범에서 선택"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/mypage_nickname_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black_50"/>
+
+        <TextView
+            android:id="@+id/mypageprofile_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:fontFamily="@font/custom_font"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/dialog_mypageprofile"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mypageprofile_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/point_red"
+            android:gravity="center"
+            android:text="프로필 사진 변경"
+            android:fontFamily="@font/custom_font"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

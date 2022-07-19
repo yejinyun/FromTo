@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/point_red">
+
+    <ImageView
+        android:id="@+id/splash_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/icon_logo_fromto"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/splash_logo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FroM.To"
+        android:textSize="45dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sourceserifpro_regular"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_logo_iv"
+        />
+
+    <View
+        android:id="@+id/splash_underscore_view"
+        android:layout_width="50dp"
+        android:layout_height="4px"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_logo_tv"/>
+
+    <TextView
+        android:id="@+id/splash_sublogo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie came like a Letter"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sourceserifpro_regular"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_underscore_view"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

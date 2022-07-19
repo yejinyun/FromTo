@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/writeP_close_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/fromto_icon_goback_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/writeP_letter_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/fromto_icon_writing_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_border"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/writeP_close_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/writeP_mailtitle_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="편지 제목을 써주세요"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/custom_font"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@id/writeP_close_iv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_close_iv"/>
+
+    <View
+        android:id="@+id/writeP_mailtitle_under"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/writeP_letter_iv"
+        app:layout_constraintStart_toEndOf="@id/writeP_close_iv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_mailtitle_et"/>
+
+    <ImageView
+        android:id="@+id/writeP_poster_iv"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_empty_movie"
+        app:layout_constraintStart_toStartOf="@id/writeP_mailtitle_et"
+        app:layout_constraintTop_toBottomOf="@id/writeP_mailtitle_under"/>
+
+    <View
+        android:id="@+id/writeP_movietitle_under"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/writeP_letter_iv"
+        app:layout_constraintStart_toEndOf="@id/writeP_close_iv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_poster_iv"/>
+
+    <EditText
+        android:id="@+id/writeP_movietitle_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:hint="영화 포스터를 추가하고,\n영화 제목을 써주세요"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/writeP_poster_iv"
+        app:layout_constraintBottom_toBottomOf="@id/writeP_poster_iv"/>
+
+    <TextView
+        android:id="@+id/read_ost_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OST"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/writeP_mailtitle_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_mailtitle_under"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fromto_icon_ost_writingletter"
+        android:padding="3dp"
+        app:layout_constraintEnd_toStartOf="@id/read_ost_tv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_mailtitle_under"/>
+
+    <EditText
+        android:id="@+id/writeP_contents_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:layout_marginTop="10dp"
+        android:hint="편지를 작성해주세요 :)"
+        android:fontFamily="@font/custom_font"
+        android:textColorHint="@color/white"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@color/white_10"
+        app:layout_constraintStart_toEndOf="@id/writeP_close_iv"
+        app:layout_constraintEnd_toStartOf="@id/writeP_letter_iv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_movietitle_under"
+        android:scrollbarThumbVertical="@color/point_red"/>
+
+    <View
+        android:id="@+id/writeP_contents_under"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/writeP_letter_iv"
+        app:layout_constraintStart_toEndOf="@id/writeP_close_iv"
+        app:layout_constraintTop_toBottomOf="@id/writeP_contents_et"/>
+
+    <TextView
+        android:id="@+id/writeP_from_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:layout_marginTop="10dp"
+        android:text="From. "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/writeP_contents_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_contents_under"/>
+
+    <TextView
+        android:id="@+id/writeP_age_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:layout_marginTop="10dp"
+        android:text="선호하는 수신자의 나이대를 선택해주세요"
+        android:textColor="@color/white_80"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/writeP_contents_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_from_tv"/>
+
+    <Spinner
+        android:id="@+id/writeP_age_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toStartOf="@id/writeP_contents_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_age_tv"/>
+
+    <TextView
+        android:id="@+id/writeP_gender_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:layout_marginTop="10dp"
+        android:text="선호하는 수신자의 성별 선택해주세요"
+        android:textColor="@color/white_80"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/writeP_contents_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_age_spinner"/>
+
+    <RadioGroup
+        android:id="@+id/writeP_gender_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/writeP_contents_under"
+        app:layout_constraintTop_toBottomOf="@id/writeP_gender_tv">
+
+        <RadioButton
+            android:id="@+id/writeP_gender_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="상관없음"/>
+
+        <RadioButton
+            android:id="@+id/writeP_gender_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="남자"/>
+
+        <RadioButton
+            android:id="@+id/writeP_gender_w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="여자"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/spo_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스포 포함"
+        android:textColor="@color/white_80"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/spo_checkbox"
+        app:layout_constraintBottom_toBottomOf="@id/spo_checkbox"
+        app:layout_constraintTop_toTopOf="@id/spo_checkbox" />
+
+    <ImageView
+        android:id="@+id/writeP_send_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/fromto_button_sending_mail_writingletter"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/writep_loading_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:indeterminateTint="@color/black_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

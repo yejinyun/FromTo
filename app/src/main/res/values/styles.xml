@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!--FilledBox일 경우 밑줄 색상, OutlinedBox일 경우 테두리 색상-->
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textCursorDrawable">@color/white</item>
+
+        <item name="android:textColorHint">@color/white_80</item>
+        <item name="hintTextColor">@color/white_80</item>
+        <item name="android:strokeColor">@color/white_80</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

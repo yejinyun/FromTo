@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fromto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_fromto"
+        android:label="Fromto"
+        android:roundIcon="@mipmap/ic_fromto_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.Fromto"
+        android:name="com.fromto.config.Application"
+        tools:targetApi="m">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+     </activity>
+
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name="com.fromto.MainActivity"/>
+        <activity android:name=".write.WritePActivity"/>
+        <activity android:name=".write.AddphotoActivity"/>
+        <activity android:name=".read.ReadmailActivity"/>
+        <activity android:name=".signup.SignupActivity"/>
+        <activity android:name=".findpsActivity"/>
+    </application>
+
+</manifest>

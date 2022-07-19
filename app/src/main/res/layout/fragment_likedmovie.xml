@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/likedmovie_close_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/fromto_icon_goback_x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/likedmovie_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요 한 영화"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/likedmovie_close_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/likedmovie_close_iv" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/likedmovie_profile_cv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="150dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likedmovie_title_tv">
+
+            <ImageView
+                android:id="@+id/likedmovie_profile_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fromto_icon_me_mypage" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/likedmovie_nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nickname."
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likedmovie_profile_cv"/>
+
+        <View
+            android:id="@+id/likedmovie_nickname_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likedmovie_nickname_tv"/>
+
+        <LinearLayout
+            android:id="@+id/likedmovie_poster_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/likedmovie_nickname_underscore_view">
+
+            <ImageView
+                android:id="@+id/mypage_written_poster_iv_01"
+                android:layout_width="143dp"
+                android:layout_height="185.9dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/mypage_written_poster_iv_02"
+                android:layout_width="143dp"
+                android:layout_height="185.9dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

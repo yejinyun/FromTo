@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/point_red">
+
+
+    <TextView
+        android:id="@+id/signup_finish_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 가입이 끝나갑니다."
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/signup_finish_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앞으로 사용하실 필명을 적어주세요."
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_finish_tv_1"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:id="@+id/signup_nickname_et"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/signup_nickname_btn"
+        app:layout_constraintTop_toBottomOf="@id/signup_finish_tv_2">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="필명 기입란"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:fontFamily="@font/custom_font"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_nickname_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/box_joongbok_check"
+        android:textColor="@color/point_red"
+        android:text="중복확인"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/signup_nickname_et"
+        app:layout_constraintBottom_toBottomOf="@id/signup_nickname_et" />
+    <TextView
+        android:id="@+id/signup_nickname_warn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 사용중인 필명입니다."
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/signup_nickname_et"
+        app:layout_constraintTop_toBottomOf="@+id/signup_nickname_et"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_finish_btn"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:text="회원가입 완료"
+        android:textSize="18sp"
+        android:background="@drawable/white_btn"
+        android:textColor="@color/point_red"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

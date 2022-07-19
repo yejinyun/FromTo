@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_written_poster_iv_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="8dp"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/item_written_poster_iv"
+            android:layout_width="130dp"
+            android:layout_height="169dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_empty_movie"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_written_poster_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="편지 제목"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:padding = "5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_written_poster_iv_cv" />
+
+<!--    android:maxLines="1"         //textview 안에 maxlines을 1줄로 지정하겠다.-->
+<!--    android:ellipsize="end"      // 화면의 범위가 넘어가는 text가 있을 시 end 부분에 ... 표시를 하겠다.-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

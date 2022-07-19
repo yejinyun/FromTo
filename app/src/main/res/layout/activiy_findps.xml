@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/point_red">
+
+    <ImageView
+    android:id="@+id/findps_close_iv"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/button_arrow_goback"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/findps_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/findps_close_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/findps_close_iv" />
+
+    <TextView
+        android:id="@+id/findps_birth_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="생년월일/성별"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_close_iv"/>
+
+    <EditText
+        android:id="@+id/findps_birth_et"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_rectangle"
+        android:hint="  YYMMDD"
+        android:textColorHint="@color/white_80"
+        android:fontFamily="@font/custom_font"
+        android:inputType="number"
+        android:textSize="15sp"
+        android:maxLength="6"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_birth_tv"/>
+
+    <ImageView
+        android:id="@+id/findps_hyphen_tv"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_veryshort_nextto_yymmdd"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/findps_birth_et"
+        app:layout_constraintStart_toEndOf="@id/findps_birth_et"
+        app:layout_constraintTop_toTopOf="@id/findps_birth_et" />
+
+    <EditText
+        android:id="@+id/findps_gender_et"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/edittext_rounded_rectangle"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:maxLength="1"
+        app:layout_constraintStart_toEndOf="@id/findps_hyphen_tv"
+        app:layout_constraintEnd_toStartOf="@id/findps_blind_tv"
+        app:layout_constraintTop_toTopOf="@id/findps_birth_et" />
+
+    <TextView
+        android:id="@+id/findps_blind_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ●●●●●●"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/findps_birth_et"
+        app:layout_constraintEnd_toEndOf="@id/findps_btn"
+        app:layout_constraintTop_toTopOf="@id/findps_birth_et" />
+
+    <TextView
+        android:id="@+id/findps_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="아이디 (이메일 주소)"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_birth_et"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:id="@+id/findps_email_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:counterTextColor="@color/white_50"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintEnd_toEndOf="@id/findps_gender_et"
+        app:layout_constraintTop_toBottomOf="@id/findps_email_tv">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/findps_email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/custom_font"
+            android:background="@drawable/edittext_rounded_rectangle"
+            android:hint="I.D (이메일 주소)"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/findps_newps_btn"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/box_injeung_done"
+        android:textColor="@color/point_red"
+        android:text="비밀번호 받기"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toEndOf="@id/findps_email_et"
+        app:layout_constraintBottom_toBottomOf="@id/findps_email_et"
+        app:layout_constraintTop_toTopOf="@id/findps_email_et" />
+
+    <TextView
+        android:id="@+id/findps_recievedps_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="받은 비밀번호"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_email_et" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:id="@+id/findps_recievedps_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:counterTextColor="@color/white_50"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:layout_constraintEnd_toEndOf="@id/findps_btn"
+        app:layout_constraintStart_toStartOf="@id/findps_recievedps_tv"
+        app:layout_constraintTop_toBottomOf="@id/findps_recievedps_tv">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/findps_recievedps"
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_rounded_rectangle"
+            android:hint="임시 비밀번호 입력"
+            android:textSize="14sp"
+            android:fontFamily="@font/custom_font"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/findps_newps_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="새 비밀번호 지정하기"
+        android:fontFamily="@font/custom_font"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_recievedps_et" />
+
+    <EditText
+        android:id="@+id/findps_newps_et"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_rectangle"
+        android:hint="새 비밀번호"
+        android:fontFamily="@font/custom_font"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/findps_btn"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_newps_tv" />
+
+    <EditText
+        android:id="@+id/findps_newps_check_et"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_rounded_rectangle"
+        android:hint="새 비밀번호 확인"
+        android:fontFamily="@font/custom_font"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/findps_btn"
+        app:layout_constraintStart_toStartOf="@id/findps_btn"
+        app:layout_constraintTop_toBottomOf="@id/findps_newps_et" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/findps_btn"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:text="비밀번호 수정"
+        android:textSize="18sp"
+        android:background="@drawable/white_btn"
+        android:textColor="@color/point_red"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

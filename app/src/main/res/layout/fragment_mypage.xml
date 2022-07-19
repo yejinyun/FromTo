@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:scrollbarThumbVertical="@color/point_red">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mypage_close_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/fromto_icon_goback_x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mypage_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Page"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/mypage_close_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mypage_close_iv" />
+
+        <ImageView
+            android:id="@+id/mypage_setting_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/fromto_icon_setting_mypage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mypage_profile_cv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_title_tv">
+
+            <ImageView
+                android:id="@+id/mypage_profile_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/black"
+                android:src="@drawable/fromto_icon_me_mypage" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/mypage_nickname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인을 해주세요 :)"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_profile_cv"/>
+
+        <View
+            android:id="@+id/mypage_nickname_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_nickname_tv"/>
+
+        <TextView
+            android:id="@+id/mypage_wirtten_movie_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내가 쓴 편지"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_nickname_underscore_view"/>
+
+        <LinearLayout
+            android:id="@+id/maypage_wirtten_poster_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_wirtten_movie_tv">
+
+            <ImageView
+                android:id="@+id/mypage_written_poster_iv_01"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_letter" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/mypage_written_poster_iv_02"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_letter" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/mypage_written_poster_iv_03"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_letter"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/mypage_written_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/maypage_wirtten_poster_layout"/>
+
+        <TextView
+            android:id="@+id/mypage_liked_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좋아요 한 영화"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_written_underscore_view"/>
+
+        <LinearLayout
+            android:id="@+id/maypage_liked_poster_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_liked_tv">
+
+            <ImageView
+                android:id="@+id/mypage_liked_poster_iv_01"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_movie" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/mypage_liked_poster_iv_02"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_movie" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/mypage_liked_poster_iv_03"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_empty_movie"/>
+        </LinearLayout>
+
+    <View
+        android:id="@+id/mypage_liked_underscore_view"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maypage_liked_poster_layout"/>
+
+        <TextView
+            android:id="@+id/mypage_service_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객센터"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_liked_underscore_view"/>
+
+        <View
+            android:id="@+id/mypage_service_midunderscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_service_tv"/>
+
+        <TextView
+            android:id="@+id/mypage_notice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_service_midunderscore_view"/>
+
+        <TextView
+            android:id="@+id/mypage_question_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_notice_tv"/>
+
+        <View
+            android:id="@+id/mypage_service_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_question_tv"/>
+
+        <TextView
+            android:id="@+id/mypage_versioninfo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버전정보"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_service_underscore_view"/>
+
+        <TextView
+            android:id="@+id/mypage_versionnum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0.0"
+            android:fontFamily="@font/custom_font"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_service_underscore_view"/>
+
+        <View
+            android:id="@+id/mypage_versionnum_underscore_view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_versionnum_tv"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mypage_versionnum_underscore_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
